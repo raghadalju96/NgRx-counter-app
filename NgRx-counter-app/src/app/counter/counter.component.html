@@ -1,0 +1,36 @@
+<div class="bg-gray-800 flex items-center justify-center p-5 vh-100">
+  <div class="text-center mt-10">
+    <div class="mb-4">
+      <h1 class="text-white font-bold">Counter App</h1>
+    </div>
+    <div id="counter" class="text-4xl font-bold text-white mb-4">
+      Count : {{ count$ | async }}
+    </div>
+
+    <div class="flex justify-center space-x-4">
+      <button
+        type="button"
+        class="btn btn-success text-white font-bold py-2 px-4 rounded me-2"
+        (click)="increment()"
+      >
+        Increment
+      </button>
+
+      <button
+        type="button"
+        class="btn btn-danger text-white font-bold py-2 px-4 rounded me-2"
+        (click)="decrement()"
+      >
+        Decrement
+      </button>
+
+      <button
+        type="button"
+        class="btn btn-warning text-white font-bold py-2 px-4 rounded me-2"
+        (click)="reset()"
+      >
+        Reset
+      </button>
+    </div>
+  </div>
+</div>
